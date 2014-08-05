@@ -244,19 +244,31 @@ if (has("gui_running") && g:solarized_degrade == 0)
     let s:vmode       = "gui"
     let s:base03      = "#002b36"
     let s:base02      = "#073642"
-    let s:base01      = "#586e75"
-    let s:base00      = "#657b83"
+    "let s:base01      = "#586e75"
+    "DVH: A bit darker.
+    let s:base01      = "#2c373a"
+    "let s:base00      = "#657b83"
+    "DVH: A bit darker.
+    let s:base00      = "#323d41"
     let s:base0       = "#839496"
     let s:base1       = "#93a1a1"
-    let s:base2       = "#eee8d5"
-    let s:base3       = "#fdf6e3"
+    "let s:base2       = "#eee8d5"
+    "DVH: A bit lighter.
+    let s:base2       = "#f1ecdd"
+    "let s:base3       = "#fdf6e3"
+    "DVH: A bit lighter.
+    let s:base3       = "#fdf7e8"
     let s:yellow      = "#b58900"
     let s:orange      = "#cb4b16"
     let s:red         = "#dc322f"
     let s:magenta     = "#d33682"
     let s:violet      = "#6c71c4"
-    let s:blue        = "#268bd2"
-    let s:cyan        = "#2aa198"
+    "let s:blue        = "#268bd2"
+    "DVH: More blue
+    let s:blue        = "#005693"
+    "let s:cyan        = "#2aa198"
+    "DVH: Blue is the new Cyan.  Original blue used as Cyan.
+    let s:cyan        = "#268bd2"
     "let s:green       = "#859900" "original
     let s:green       = "#719e07" "experimental
 elseif (has("gui_running") && g:solarized_degrade == 1)
@@ -629,7 +641,9 @@ exe "hi! Title"          .s:fmt_bold   .s:fg_orange .s:bg_none
 exe "hi! VisualNOS"      .s:fmt_stnd   .s:fg_none   .s:bg_base02 .s:fmt_revbb
 exe "hi! WarningMsg"     .s:fmt_bold   .s:fg_red    .s:bg_none
 exe "hi! WildMenu"       .s:fmt_none   .s:fg_base2  .s:bg_base02 .s:fmt_revbb
-exe "hi! Folded"         .s:fmt_undb   .s:fg_base0  .s:bg_base02  .s:sp_base03
+"exe "hi! Folded"         .s:fmt_undb   .s:fg_base0  .s:bg_base02  .s:sp_base03
+"DVH Lighten up and de-bold the fold text.
+exe "hi! Folded"         .s:fmt_none   .s:fg_base01  .s:bg_base02  .s:sp_base03
 exe "hi! FoldColumn"     .s:fmt_none   .s:fg_base0  .s:bg_base02
 if      (g:solarized_diffmode=="high")
 exe "hi! DiffAdd"        .s:fmt_revr   .s:fg_green  .s:bg_none
