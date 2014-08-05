@@ -1,3 +1,8 @@
+# Modifications made to Colors #
+
+1. A bit more contrast is provided in some of the colors.
+2. Folds were de-emphasized to go better with Python code.
+
 ---
 Title: Solarized Colorscheme for Vim
 Description: Precision colors for machines and people
