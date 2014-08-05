@@ -1,4 +1,6 @@
-# Modifications made to Colors #
+# Doug's Modifications
+
+**August 5, 2014**
 
 1. A bit more contrast is provided in some of the colors.
 2. Folds were de-emphasized to go better with Python code.
